@@ -13,7 +13,7 @@ spec:
         app: grayround
     spec:
       containers:
-      - name: nginx-container
+      - name: grayround
         image: shinkiho/grayround:master
         ports:
         - containerPort: 80
