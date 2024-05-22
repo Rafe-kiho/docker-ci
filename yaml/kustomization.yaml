@@ -1,0 +1,12 @@
+namePrefix: kustomize-
+
+resources:
+- ./deply.yaml
+- ./svc.yaml
+#- ingress.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: docker.io/shinkiho/grayround
+  newName: docker.io/shinkiho/grayround
+  newPullPolicy: Always
